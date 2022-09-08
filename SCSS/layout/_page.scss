@@ -1,0 +1,102 @@
+@use "../partials/variables" as *;
+@use "../vendor/media-query-mixins" as *;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+
+  @include md {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 8rem;
+  }
+}
+
+.content > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background-color: white;
+  color: $accGrayishBlue;
+  font-size: 0.7rem;
+
+  @include md {
+    width: 50vw;
+    height: 60vh;
+  }
+
+  @include lg {
+    width: 33.75rem;
+    height: 30rem;
+  }
+
+  .input-ctn {
+    position: relative;
+    margin-bottom: 1.375rem;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.919rem 2em;
+    font: 600 normal 1rem/1.5rem;
+    border: 1px solid $accGrayishBlue;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .input:focus {
+    border: none;
+    outline: 2px solid $accGrayishBlue;
+  }
+
+  .error .input-ctn::before {
+    content: url(/images/icon-error.svg);
+    position: absolute;
+    top: 30%;
+    right: 2rem;
+    z-index: 1;
+  }
+
+  .error .input {
+    border: none;
+    outline: 2px solid $prRed;
+  }
+
+  .error .error-msg {
+    display: block;
+  }
+
+  .error-msg {
+    font-size: 0.65rem;
+    color: $prRed;
+    font-style: italic;
+    text-align: right;
+    margin-top: 0.5rem;
+    display: none;
+  }
+}
+
+.text {
+  text-align: center;
+
+  &__red {
+    font-weight: 600;
+    color: $prRed;
+  }
+}

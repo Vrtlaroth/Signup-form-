@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.primary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: hsl(248deg, 32%, 49%);
+  border: 1px solid hsl(248deg, 32%, 49%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.primary__trial {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .primary {
+    padding: 1rem 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .primary {
+    padding: 1rem 7rem;
+  }
+}
+@media (min-width: 1281px) {
+  .primary {
+    padding: 1.4rem 7rem;
+    width: 38vw;
+  }
+}
+
+.secondary {
+  padding: 1rem 2.7rem;
+  border-radius: 0.5rem;
+  background-color: hsl(154deg, 59%, 51%);
+  border: 1px solid hsl(154deg, 59%, 51%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .secondary {
+    padding: 1rem 5.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .secondary {
+    padding: 1rem 9.5rem;
+  }
+}
+@media (min-width: 1281px) {
+  .secondary {
+    padding: 1rem 0.5rem;
+    width: 33vw;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 8rem;
+  }
+}
+
+.content > p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 1rem;
+  background-color: white;
+  color: hsl(246deg, 25%, 77%);
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 50vw;
+    height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 33.75rem;
+    height: 30rem;
+  }
+}
+.container .input-ctn {
+  position: relative;
+  margin-bottom: 1.375rem;
+}
+.container .input {
+  width: 100%;
+  padding: 0.919rem 2em;
+  font: 600 normal 1rem/1.5rem;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+  position: relative;
+}
+.container .input:focus {
+  border: none;
+  outline: 2px solid hsl(246deg, 25%, 77%);
+}
+.container .error .input-ctn::before {
+  content: url(/images/icon-error.svg);
+  position: absolute;
+  top: 30%;
+  right: 2rem;
+  z-index: 1;
+}
+.container .error .input {
+  border: none;
+  outline: 2px solid hsl(0deg, 100%, 74%);
+}
+.container .error .error-msg {
+  display: block;
+}
+.container .error-msg {
+  font-size: 0.65rem;
+  color: hsl(0deg, 100%, 74%);
+  font-style: italic;
+  text-align: right;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.text {
+  text-align: center;
+}
+.text__red {
+  font-weight: 600;
+  color: hsl(0deg, 100%, 74%);
+}
+
+.img--background {
+  width: 100%;
+  height: auto;
+  content: url(/imagesbg-intro-desktop.png);
+}
+.img--error {
+  width: 100%;
+  height: auto;
+  content: url(/imagesicon-error.svg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: hsl(0deg, 100%, 74%);
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@use "mixins" as *;
+
+.img {
+  &--background {
+    @include image("bg-intro-desktop.png");
+  }
+
+  &--error {
+    @include image("icon-error.svg");
+  }
+}

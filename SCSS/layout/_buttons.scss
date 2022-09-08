@@ -1,0 +1,56 @@
+@use "../partials/variables" as *;
+@use "../vendor/media-query-mixins" as *;
+
+.primary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: $accBlue;
+  border: 1px solid $accBlue;
+  color: white;
+  font-family: $primary-font;
+  text-align: center;
+
+  &__trial {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  @include md {
+    padding: 1rem 3rem;
+  }
+  @include lg {
+    padding: 1rem 7rem;
+  }
+
+  @include xl {
+    padding: 1.4rem 7rem;
+    width: 38vw;
+  }
+}
+
+.secondary {
+  padding: 1rem 2.7rem;
+  border-radius: 0.5rem;
+  background-color: $prGreen;
+  border: 1px solid $prGreen;
+  color: white;
+  font-family: $primary-font;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: $primary-font;
+  font-weight: 600;
+  cursor: pointer;
+
+  @include md {
+    padding: 1rem 5.7rem;
+  }
+
+  @include lg {
+    padding: 1rem 9.5rem;
+  }
+  @include xl {
+    padding: 1rem 0.5rem;
+    width: 33vw;
+  }
+}
